@@ -11,8 +11,9 @@ html, body {
 body { 
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url('fireplace.jpg');
-  background-repeat: no-repeat;
+ 
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(241,175,4,1) 100%);  background-repeat: no-repeat;
   background-attachment: fixed;  
   background-size: cover;
   
@@ -38,13 +39,13 @@ body {
 }
 
 .mainText{
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-name: slidein;
   }
   
   @keyframes slidein {
     from {
-      margin-left: 150%;
+      margin-left: 200%;
       
     
     }
@@ -125,9 +126,10 @@ position: sticky;
 }
 
 .mainText h1{
-    margin-top: -30px;
+    margin-top: 100px;
     font-size: 100px;
     font-weight: bold;
+    text-shadow: 2px 2px 5px black;
 }
 
 .mainText p{
