@@ -51,9 +51,9 @@ body {
     }
   
     to {
-      margin-left: 4%;
+      
     
-      width: 100%;
+     
     }
   }
   
@@ -134,6 +134,7 @@ position: sticky;
 
 .mainText p{
     margin-top: -50px;
+    text-shadow: 2px 2px 5px black;
 }
 
 
@@ -165,16 +166,19 @@ position: sticky;
   }
 
   .mainText h1{
-    margin-top: -10px;
+    margin-top: 50px;
     font-size: 75px;
     font-weight: bold;
 }
 
-.mainText{
- 
-  font-size: 30px;
-  
+.mainText p{
+  margin-top: -40px;
+  text-shadow: 2px 2px 5px black;
 }
+
+}
+
+  
 
 @media screen and (max-width: 700px) { /*Phones*/
   .header a {
@@ -214,5 +218,14 @@ position: sticky;
 
 .mainText p{
   margin-top: -20px;
+  margin-right: 5%;
+}
+
+body{
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 30%, rgba(241,175,4,1) 100%);  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  
 }
 }
