@@ -3,9 +3,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 *{
-  
+
   outline: none;
-  
+
   font-family: 'Poppins', sans-serif, ;
 }
 
@@ -15,22 +15,22 @@ html, body {
     height: 100%;
     max-height: 100%;
     overflow-y: fit;
-    
-    
+
+
 }
 
-body { 
+body {
   margin: 0;
   font-family: poppins;
- 
+
   background: rgb(0,0,0);
   background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(241,175,4,1) 100%);  background-repeat: no-repeat;
-  background-attachment: fixed;  
+  background-attachment: fixed;
   background-size: cover;
   height:100%;
-  
-  
-  
+
+
+
 }
 
 
@@ -55,18 +55,19 @@ body {
   margin-left: 2%;
   opacity: 95%;
   width: 96%;
-
+  transform: scale(0.94);
+animation: scale 0.5s forwards cubic-bezier(0.5, 1, 0.89, 1);
 
   padding: 20px 10px;
   border-radius: 15px;
   font-weight: bold;
 
-  
+
 }
 
 
 .footer {
-  
+
   background-color: #fff;
   margin-top: -2%;
   opacity: 60%;
@@ -75,31 +76,31 @@ body {
   padding: 10px 10px;
   border-radius: 7px;
   font-weight: bold;
-  
+
   margin-left: 2%;
   margin-right: 2%;
 
-  
-  
-  
+
+
+
 }
 
 
-  
+
 
   #flex-container {
   flex-direction: flex;
- 
+
 
   height: 100vh;
   width: 100%;
-  
+
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   top: 0;
-  
+
   z-index: 3;
 }
 
@@ -127,18 +128,18 @@ video{
     animation-duration: 2s;
     animation-name: slidein;
   }
-  
+
   /*@keyframes slidein {
     from {
       margin-left: 200%;
-      
-    
+
+
     }
-  
+
     to {
-      
-    
-     
+
+
+
     }
   }
   */
@@ -148,18 +149,19 @@ video{
   text-align: center;
   padding: 12px;
   text-decoration: none;
-  font-size: 18px; 
+  font-size: 18px;
   line-height: 25px;
   border-radius: 15px;
   font-family: poppins;
-  
-  
+
+
 }
 
 .header a.logo{
-    
-    width: 150px;
-    height: 75px;
+
+    width: 115px;
+    height: 115px;
+    margin-left: 10px;
 
 }
 a+a {
@@ -169,12 +171,12 @@ a+a {
 
 
 .header a.logo img{
-    margin-top: -40%;
-    margin-left: -10%;
+    margin-top: -5%;
+    margin-left: auto;
     width: auto;
-    height: 150px;
-    
-    
+    height: 100px;
+
+
 }
 
 .header a:hover {
@@ -182,7 +184,7 @@ a+a {
   color: black;
   border-radius: 15px;
   padding: auto;
-  
+
 }
 
 .header a.active {
@@ -190,12 +192,12 @@ a+a {
   color: white;
   border-radius: 15px;
   padding: auto;
-  
-  
+
+
 }
 
 .buttons {
-margin-top: 15px;
+margin-top: 30px;
 position: -webkit-sticky;
 position: sticky;
 float: right;
@@ -211,7 +213,7 @@ margin-right: 3%;
     font-weight: lighter;
     font-size: 30px;
     margin-right: 5%;
-    
+
 }
 
 .mainText h1{
@@ -220,14 +222,14 @@ margin-right: 3%;
     font-weight: bold;
     text-shadow: 2px 2px 5px black;
     transform: scale(0.94);
-  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  animation: scale 0.5s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
 
 .mainText p{
     margin-top: 10px;
     text-shadow: 5px 5px 5px black;
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
-    
+
 }
 
 
@@ -245,13 +247,13 @@ margin-right: 3%;
     display: block;
     text-align: left;
   }
-  
+
   .buttons {
     float: none;
   }
 
-  
-  
+
+
   .header a.active {
     background-color: #f1af04;
     color: white;
@@ -268,7 +270,7 @@ margin-right: 3%;
   margin-top: 20px;
   text-shadow: 2px 2px 5px black;
   font-size: 22.5px;
-  
+
 }
 
 a+a {
@@ -285,7 +287,7 @@ video{
 
 }
 
-  
+
 
 @media screen and (max-width: 700px) { /*Phones*/
   .header a {
@@ -293,13 +295,13 @@ video{
     display: block;
     text-align: left;
   }
-  
+
   .buttons {
     float: none;
-    
+
   }
 
-  
+
   .header a.active {
     background-color: #f1af04;
     color: white;
@@ -311,9 +313,9 @@ video{
     font-size: 30px;
     font-weight: bold;
 }
- 
+
 .mainText{
- 
+
   font-weight: lighter;
   margin-bottom: auto;
 }
@@ -328,9 +330,9 @@ video{
 body{
   background: rgb(0,0,0);
   background: linear-gradient(180deg, rgba(0,0,0,1) 30%, rgba(241,175,4,1) 100%);  background-repeat: no-repeat;
-  background-attachment: fixed;  
+  background-attachment: fixed;
   background-size: cover;
-  
+
 }
 a+a {
   margin-left: 0px;
