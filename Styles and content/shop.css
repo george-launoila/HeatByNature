@@ -1,85 +1,147 @@
-* {
-  box-sizing: border-box;
-}
-
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-  height: 100%;
-  max-height: 100%;
-  overflow-y: fit;
-
+html, body{
 
 }
 
-body {
-margin: 0;
-font-family: poppins;
-
-background: rgb(0,0,0);
-background: linear-gradient(180deg, rgba(0,0,0,1) 10%, rgba(241,175,4,1) 100%);  background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: cover;
-height:100%;
+.wrapper{
 
 
-
-}
-
-
-
-
-
-.card{
-border-radius: 15px;
-opacity: 95%;
-
-}
-/* Float four columns side by side */
-.column {
   float: left;
-  width: 46%;
-  opacity: 0;
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-bottom: 2%;
-  margin-top: 0;
+  width: 21%;
+
+
   border-radius: 15px;
-  animation: fadeIn 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  filter: blur(4px);
 
+margin-left: 2%;
+margin-right: 2%;
 
-}
+transform: scale(0.94);
+animation: scale 1s forwards cubic-bezier(0.5, 1, 0.89, 1);
+   height: 500px;
+   background: white;
+   position: relative;
+   overflow: hidden;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0;
+  transform: scale(0.95);
+  transition: box-shadow 0.5s, transform 0.5s;
+  &:hover{
+    transform: scale(1);
+    box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
+  }
 
-/* Remove extra left and right margins, due to padding */
-
-
-/* Clear floats after the columns */
-
-
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 96%;
-   margin-left: 2%;
-   margin-right: 2%;
-   margin-bottom: 2%;
-
+  .container{
+    width:100%;
+    height:100%;
+    .top{
+      height: 80%;
+      width:100%;
+      background: url(https://s-media-cache-ak0.pinimg.com/736x/49/80/6f/49806f3f1c7483093855ebca1b8ae2c4.jpg) no-repeat center center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+    }
+    .bottom{
+      width: 200%;
+      height: 20%;
+      transition: transform 0.5s;
+      &.clicked{
+        transform: translateX(-50%);
+      }
+      h1{
+          margin:0;
+          padding:0;
+      }
+      p{
+          margin:0;
+          padding:0;
+      }
+      .left{
+        height:100%;
+        width: 50%;
+        background: #f4f4f4;
+        position:relative;
+        float:left;
+        .details{
+          padding: 20px;
+          float: left;
+          width: calc(70% - 40px);
+        }
+        .buy{
+          float:right;
+          width: calc(30% - 2px);
+          height:100%;
+          background: #f1f1f1;
+          transition: background 0.5s;
+          border-left:solid thin rgba(0,0,0,0.1);
+          i{
+            font-size:30px;
+            padding:30px;
+            color: #254053;
+            transition: transform 0.5s;
+          }
+          &:hover{
+            background: #A6CDDE;
+          }
+          &:hover i{
+            transform: translateY(5px);
+            color:#00394B;
+          }
+        }
+      }
+      .right{
+        width: 50%;
+        background: #A6CDDE;
+        color: white;
+        float:right;
+        height:200%;
+        overflow: hidden;
+        .details{
+          padding: 20px;
+          float: right;
+          width: calc(70% - 40px);
+        }
+        .done{
+          width: calc(30% - 2px);
+          float:left;
+          transition: transform 0.5s;
+          border-right:solid thin rgba(255,255,255,0.3);
+          height:50%;
+          i{
+            font-size:30px;
+            padding:30px;
+            color: white;
+          }
+        }
+        .remove{
+          width: calc(30% - 1px);
+          clear: both;
+          border-right:solid thin rgba(255,255,255,0.3);
+          height:50%;
+          background: #BC3B59;
+          transition: transform 0.5s, background 0.5s;
+          &:hover{
+            background: #9B2847;
+          }
+          &:hover i{
+            transform: translateY(5px);
+          }
+          i{
+            transition: transform 0.5s;
+            font-size:30px;
+            padding:30px;
+            color: white;
+          }
+        }
+        &:hover{
+          .remove, .done{
+            transform: translateY(-100%);
+          }
+        }
+      }
+    }
   }
 
 
-}
-
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 0.95;
-    filter: blur(0); }
+  }
 }
