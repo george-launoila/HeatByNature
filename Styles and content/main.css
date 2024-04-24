@@ -55,8 +55,7 @@ body {
   margin-left: 2%;
   opacity: 95%;
   width: 96%;
-  transform: scale(0.94);
-animation: scale 0.5s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  
 
   padding: 20px 10px;
   border-radius: 15px;
