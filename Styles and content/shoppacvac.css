@@ -16,7 +16,7 @@ margin-right: 2%;
 
 transform: scale(0.94);
 animation: scale 1s forwards cubic-bezier(0.5, 1, 0.89, 1);
-   height: 500px;
+   height: 50%;
    background: white;
    position: relative;
    overflow: hidden;
@@ -94,17 +94,20 @@ animation: scale 1s forwards cubic-bezier(0.5, 1, 0.89, 1);
   
 
 
-    @media(max-width:420px) {
+    @media(max-width:1000px) {
       .wrapper{
         width: 96%;
         margin-top: 5%;
-        height: 50%;
+        height: 60%;
+      }
+      img{
+        width: 40%;
+        height: inherit;
+        position: relative;
       }
     }
   
-    @media(max-width:450px) {
-     
-    }
+ 
 
 .container{
 
