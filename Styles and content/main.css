@@ -114,7 +114,6 @@ video{
   bottom: 0;
   position:fixed;
   object-fit: fill;
-  
   object-position: center center;
   width: 100%;
   z-index: 2;
@@ -252,6 +251,9 @@ margin-right: 3%;
   }
 
 
+ 
+
+
 
   .header a.active {
     background-color: #f1af04;
@@ -300,6 +302,10 @@ video{
 
   }
 
+  video{
+
+    opacity: 0;
+  }
 
   .header a.active {
     background-color: #f1af04;
