@@ -1,0 +1,72 @@
+html, body{
+
+}
+
+.wrapper img{
+position: fixed;
+}
+
+.wrapper{
+
+
+  float: left;
+  width: 29.2%;
+  
+
+  border-radius: 15px;
+
+margin-left: 2%;
+margin-right: 2%;
+
+transform: scale(0.94);
+animation: scale 1s forwards cubic-bezier(0.5, 1, 0.89, 1);
+   height: 50%;
+   background: white;
+   position: relative;
+   overflow: hidden;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0;
+  transform: scale(0.95);
+  transition: box-shadow 0.5s, transform 0.5s;
+  &:hover{
+    transform: scale(1);
+    box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
+  }
+ }
+     
+        &:hover{
+          .remove, .done{
+            transform: translateY(-100%);
+          }
+        }
+      
+    
+  
+
+
+    @media(max-width:1000px) {
+      .wrapper{
+        width: 96%;
+        margin-top: 5%;
+        height: 60%;
+      }
+      img{
+        width: 40%;
+        height: inherit;
+        position: relative;
+      }
+    }
+  
+ 
+
+.container{
+
+  height: 100% ;
+}
+
+.bottom img{
+
+  margin-top: 0%;
+  margin-right: 30%;
+  margin-left: 30%;
+}

@@ -1,0 +1,118 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Heat by Nature</title>
+  <link rel="icon" type="image/x-icon" href="/Styles and content/logo.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/Styles and content/form.css">
+	<link rel="stylesheet" type="text/css" href="/Styles and content/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="/Scripts/email.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/e55832ea49.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+
+      
+
+</head>
+<body>
+
+  
+  <div class="videoContainer">
+    <video playsinline autoplay muted loop>
+      <source src="/Styles and content/fire.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    </div>
+
+    <div id="flex-container">
+
+    <div class="header" >
+      <a href="/index.html" class="logo"><img src="/Styles and content/logo.png" alt="hbn"></a>
+      
+      <div class="buttons">
+        
+        <a href="/index.html">Home</a>
+       
+        <a href="/docs/catalog.html">Catalog</a>
+        
+        <a class="active" href="/docs/contact.html">Contact us</a>
+      </div>
+    </div>
+
+
+    <div class="mainText">
+      <h1>
+        <span>Contact us</span>
+          
+        </h1>      
+    </div>
+    
+    <div class="container">
+     
+      <form id="form" action="#">
+        
+        <div class="form-row">
+           <div class="input-data">
+              <input type="text" name="name" id="name" required>
+              <div class="underline"></div>
+              <label for="">Name</label>
+           </div>
+           <div class="input-data">
+              <input type="email" name="email" id="email" required>
+              <div class="underline"></div>
+              <label for="">Email</label>
+           </div>
+        </div>
+
+
+        
+        <div class="form-row">
+
+          <div class="input-data">
+            <input type="text" type="text" name="company" id="company" required>
+            <div class="underline"></div>
+            <label for="">Company or association</label>
+         </div>
+           <div class="input-data">
+              <input type="text" type="text" name="subject" id="subject" required>
+              <div class="underline"></div>
+              <label for="">Subject</label>
+           </div>
+           
+        </div>
+        <div class="form-row">
+        <div class="input-data textarea">
+           <textarea rows="2" cols="50" name="message" id="message" required></textarea>
+           
+           <div class="underline"></div>
+           <label for="">Write your message</label>
+          </div> 
+        </div>
+        
+           <center>
+                 <input class="button-30" type="submit" id="button" value="Send Email">
+                </center>
+           </form>
+          
+    </div>
+     
+    </div>
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <script type="text/javascript">
+      emailjs.init('_dWIFfrq8o-PkruSu')
+    </script>
+    </div>
+
+  
+</body>
+
+
+
+</html>
