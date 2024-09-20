@@ -1,3 +1,6 @@
+html, body{
+
+}
 
 .wrapper{
 
@@ -141,4 +144,4 @@ animation: scale 1s forwards cubic-bezier(0.5, 1, 0.89, 1);
 
 
   }
-
+}

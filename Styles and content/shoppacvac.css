@@ -10,14 +10,13 @@ position: fixed;
 
 
   float: left;
-  width: 30%;
+  width: 29.2%;
   
- 
-  margin-bottom: 5%;
+
   border-radius: 15px;
 
-margin-left: 2.5%;
-
+margin-left: 2%;
+margin-right: 2%;
 
 transform: scale(0.94);
 animation: scale 1s forwards cubic-bezier(0.5, 1, 0.89, 1);
@@ -49,14 +48,13 @@ animation: scale 1s forwards cubic-bezier(0.5, 1, 0.89, 1);
       .wrapper{
         width: 96%;
         margin-top: 5%;
-        height: 50%;
+        height: 60%;
       }
-      .bottom img{
-     margin-top: 10%;
-
-        
+      img{
+        width: 40%;
+        height: inherit;
+        position: relative;
       }
-      
     }
   
  
@@ -68,64 +66,7 @@ animation: scale 1s forwards cubic-bezier(0.5, 1, 0.89, 1);
 
 .bottom img{
 
-  margin-top: -10%;
-  margin-right: 30%;
-  margin-left: 30%;
-}
-
-
-.SuperPro img{
-
   margin-top: 0%;
   margin-right: 30%;
   margin-left: 30%;
-}
-
-.nappi a:hover {
-  background-color: #0069AD;
-  color: #FA7268;
-  border-radius: 15px;
-  padding: auto;
-
-}
-
-.nappi a.active {
-  background-color: #0069AD;
-  color: white;
-  border-radius: 15px;
-  padding: auto;
-}
-
-.nappi a {
-
-  color: white;
-  background-color: #0069AD;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 15px;
-  font-family: poppins;
-
-
-}
-
-@media(max-width:1000px) {
-  
-  .bottom img{
-
-    margin-top: -10%;
-   width: 35%;
-    margin-left: 32%;
-    float: right;
-  }
-  .SuperPro img{
-
-    margin-top: 0%;
-   width: 30%;
-    margin-left: 35%;
-    float: right;
-  }
-  
 }

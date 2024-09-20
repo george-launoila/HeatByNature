@@ -42,9 +42,8 @@ margin-bottom: 50px;
   margin-left: 2%;
   overflow: hidden;
   margin-bottom: 10px;
-  max-width: 80%;
+  max-width: 50%;
   margin: auto;
-  
  
 
  
@@ -161,7 +160,6 @@ form .form-row .textarea{
     height: 400px;
     margin: auto;
     max-width: 90%;
-    margin-bottom: 5%;
   }
 
   .button-30{
