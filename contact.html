@@ -1,130 +1,118 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Heat by Nature</title>
-	<link rel="icon" type="image/x-icon" href="Styles and content/logo-transparent.png">
-
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="Styles and content/form.css">
-	<link rel="stylesheet" type="text/css" href="Styles and content/main.css">
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <script src="Scripts/email.js" type="text/javascript"></script>
-    <script src="https://kit.fontawesome.com/e55832ea49.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-
-
-
-
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" type="image/x-icon" href="logo/heatbynature-logo.png">
+    <title>Heat by Nature</title>
 </head>
+
 <body>
+    <!-- Navbar --> 
+    <nav class="nav">
+        <div class="button">
+            <a href="home.html"><img src="logo/heatbynature-logo.png"></a>
+        </div>
 
+        <div class="nav_hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
-  <div class="videoContainer">
-    <video playsinline autoplay muted loop>
-      <source src="Styles and content/fire.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+        <div class="nav_menu">
+            <ul id="nav-links">
+                <li class="button"><span><a href="home.html">home</a></span></li>
+                <li class="button"><span><a href="gallery.html">gallery</a></span></li>
+                <li class="button"><span><a href="pacvac.html">pacvac</a></span></li>
+                <li class="button"><span><a class="active" href="contact.html">contact</a></span></li>
+            </ul>
     </div>
+    </nav>
 
-    <div id="flex-container">
+    <!-- Contact form -->
 
-    <div class="header" >
-      <a href="Home" class="logo"><img src="Styles and content/logo-transparent.png" alt="hbn"></a>
-
-
-      <div class="buttons">
-
-        <a href="Home">Home</a>
-        <a href="Gallery">Gallery</a>
-				<a href="Pacvac">Pacvac</a>
-
-          
-        <a class="active" href="Contact">Contact us</a>
-      </div>
-    </div>
-
-
-    <div class="mainText">
-      <h1>
-        <center>
-        <span>Contact us</span>
-          </center>
-        </h1>
+    <div class="header">
+        <h3>Send Us a Message!</h3>
+        <p>Please fill in the form below to get in touch with us</p>
     </div>
 
     <div class="container">
+        <form id="contact-form">
+          <input type="text" id="name" name="name" placeholder="Name *" oninvalid="this.setCustomValidity('Please fill out this field')" 
+          onchange="this.setCustomValidity('')" required>
+      
+          <input type="email" id="email" name="email" placeholder="Email *" oninvalid="this.setCustomValidity('Please fill out this field')"
+          onchange="this.setCustomValidity('')" required>
+      
+          <input type="text" id="company" name="company" placeholder="Company">
+      
+          <textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
+      
+          <input type="submit" id="button" value="Send message">
 
-      <form id="form" action="#">
+          <p>* Required</p>
+        </form>
+      </div>
 
-        <div class="form-row">
-           <div class="input-data">
-              <input type="text" name="name" id="name" required>
-              <div class="underline"></div>
-              <label for="">Name</label>
-           </div>
-           <div class="input-data">
-              <input type="email" name="email" id="email" required>
-              <div class="underline"></div>
-              <label for="">Email</label>
-           </div>
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <p id="popup-message">Your message has been sent successfully!</p>
+          <button onclick="closePopup()">Close</button>
         </div>
+      </div>
+      
 
-
-
-        <div class="form-row">
-
-          <div class="input-data">
-            <input type="text" type="text" name="company" id="company" required>
-            <div class="underline"></div>
-            <label for="">Company or association</label>
-         </div>
-           <div class="input-data">
-              <input type="text" type="text" name="subject" id="subject" required>
-              <div class="underline"></div>
-              <label for="">Subject</label>
-           </div>
-
+    <!-- Footer 
+    <div class="footer">
+        <p>info@heatbynature.com</p>
+        <div class="img">
+            <a href="home.html"><img src="logo/heatbynature-logo.png"></a>
         </div>
-        <div class="form-row">
-        <div class="input-data textarea">
-           <textarea rows="2" cols="50" name="message" id="message" required></textarea>
-
-           <div class="underline"></div>
-           <label for="">Write your message</label>
-          </div>
-        </div>
-
-           <center>
-                 <input class="button-30" type="submit" id="button" value="Send Email">
-                </center>
-           </form>
-
     </div>
+    -->
 
-    </div>
-    <script type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-    <script type="text/javascript">
-      emailjs.init('_dWIFfrq8o-PkruSu')
-    </script>
-    </div>
-
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EE1TMX8F1M"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-EE1TMX8F1M');
-</script>
+    <script src="navbar.js"></script>
 
 </body>
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  emailjs.init('_dWIFfrq8o-PkruSu'); 
+
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const form = event.target;
+    const btn = form.querySelector('input[type="submit"]');
+    btn.value = 'Sending...';
+
+    emailjs.sendForm('default_service', 'template_dl9aa2l', form)
+      .then(function(response) {
+        form.reset();
+        btn.value = 'Send message';
+        showPopup('Your message has been sent successfully!');
+      }, function(error) {
+        btn.value = 'Send message';
+        showPopup('Oops! Something went wrong. Please try again.');
+      });
+  });
+
+  function showPopup(message) {
+    const popup = document.getElementById('popup');
+    const popupMessage = document.getElementById('popup-message');
+    popupMessage.textContent = message;
+    popup.style.display = 'flex';
+  }
+
+  function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+  }
+</script>
 
 
 </html>
